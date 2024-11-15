@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Learning Platform</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
-  <body>
-  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<body>
+ <!-- Navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Online Learning Platform</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    
+                <ul class="navbar-nav me-auto">  <!-- Added 'me-auto' to push content to the left -->
+ 
+ 
+                    <!-- Links to other pages in the project -->
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="homepage.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="courses.html">Courses</a>
@@ -40,62 +43,57 @@
                         <a class="nav-link active" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
-                <form class="d-flex ms-auto" role="search"> 
+                <form class="d-flex ms-auto" role="search">  <!-- Added 'ms-auto' to move form to the right -->
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                    <button class="btn btn-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 
-    <header class="jumbotron text-center">
-      <h1 class="display-4">Welcome to the Online Learning Platform</h1>
-      <p class="lead">Your gateway to a world of knowledge and learning.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
-      <a class="btn btn-secondary btn-lg" href="#" role="button">Log In</a>
-      <a class="btn btn-success btn-lg" href="#" role="button"
-        >Explore Courses</a
-      >
-    </header>
+    <!-- Main container for the Contact Us page content -->
+    <div class="container mt-5">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or need assistance, feel free to reach out to us using the form below or through our contact details.</p>
 
-    <div class="container">
-      <h2 class="text-center my-4">Popular Courses</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="course1.jpg" class="card-img-top" alt="Course 1" />
-            <div class="card-body">
-              <h5 class="card-title">Course 1</h5>
-              <p class="card-text">Brief description of Course 1.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+        
+        <!-- Contact form section -->
+         <div class="col-md-6">
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name">
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="course2.jpg" class="card-img-top" alt="Course 2" />
-            <div class="card-body">
-              <h5 class="card-title">Course 2</h5>
-              <p class="card-text">Brief description of Course 2.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your email">
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="course3.jpg" class="card-img-top" alt="Course 3" />
-            <div class="card-body">
-              <h5 class="card-title">Course 3</h5>
-              <p class="card-text">Brief description of Course 3.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
             </div>
-          </div>
+            <!-- Submit button styled with Bootstrap -->
+            <button type="submit" class="btn btn-outline-primary btn-lg" style="border-radius: 35%;">Submit</button>
+        </form>
         </div>
-      </div>
-    </div>
+        <!-- Contact details section using Bootstrap grid system -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h4><i class="bi bi-envelope-fill icon-style"></i> Email Us</h4>
+                <p><a href="mailto:support@onlinelearning.com">support@onlinelearning.com</a></p>
+            </div>
+            <div class="col-md-4">
+                <h4><i class="bi bi-telephone-fill icon-style"></i> Call Us</h4>
+                <p><a href="tel">+ 94 (344) 443-456</a></p>
+            </div>
+            <div class="col-md-4">
+                <h4><i class="bi bi-geo-alt-fill icon-style"></i> Visit Us</h4>
+                <p>New Building parkstreet, Colombo 03, Sri Lanka</p>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+    <!-- Including Bootstrap JS for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
